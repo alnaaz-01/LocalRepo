@@ -1,0 +1,73 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-image: url('back.jpg');
+    }
+    .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    }
+    .sidenav a,.dropdown-btn:hover {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s; }
+    .sidenav a.active {
+    background-color:black;
+    color:white; }
+    .dropdown-btn:hover {
+    background-color:black;
+    color:black; }
+    .sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+    }
+    .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    }
+    #main {
+    transition: margin-left .5s;
+    padding: 16px;
+    }
+    @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    }
+    h2,h1 {
+    color:white;
+    }
+    p {
+    color: white;
+    }
+    .topnav {
+    overflow: hidden;
+    background-color: #333 (90deg, #FFC0CB 50%, #00FFFF 50%);
+    }
+    .topnav a {
+    float: right;
+    color: red;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: orange;
+    }
+    .topnav a:hover {
+    background-color: red;
+    color: black;
+    }
+    .topnav a.active {
+    background-color: black;
+    color: white; }

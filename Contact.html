@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>USER FEEDBACK FORM</title>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<h3>Feedback Form</h3>
+<div class="container">
+<form id="studentForm">
+<label for="firstname">First Name</label>
+<input type="text" id="firstname" name="firstname" class="form-control" placeholder="Your name..">
+<label for="lastname">Last Name</label>
+<input type="text" id="lastname" name="lastname" class="form-control" placeholder="Your last name..">
+<label for="contact">Contact</label>
+<input type="text" id="contact" name="contact" class="form-control" placeholder="your mobile number">
+<label for="E-mail">E-mail</label>
+<input type="text" id="Email" name="Email" class="form-control" placeholder="your mobile number">
+<label for="branch">Choose a product:</label>
+<select name="branch" id="branch" class="form-control">
+<option value="select branch" id="branch" placeholder="select branch">
+<option value="laptop">Laptop</option>
+<option value="mobile">Mobile</option>
+<option value="desktop">Desktop</option>
+</select>
+<label for="subject">Feedback</label>
+<textarea id="subject" name="subject" class="form-control" placeholder="Write something.." style="height:200px"></textarea>
+<button class="btn btn-primary btn-lg" id="btnAddStudent" type="button">
+SUBMIT
+</button>
+</form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="my.js"></script>
+</body>
+</html>

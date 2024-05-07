@@ -1,0 +1,140 @@
+<html>
+<title>W3.CSS</title>
+<title>Font Awesome Icons</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="font.css">
+<link rel="stylesheet" href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_push">
+<img src="mag.png" style="height:60px;width:100px;margin-left: 650px;">
+<link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<marquee style="color:black;">Hello welcome
+</marquee>
+<div class="topnav">
+<a href="#contact">Contact</a>
+<a href="#about">About</a>
+<a href="#news">News</a>
+<a class="active" href="#home">Home</a>
+</div>
+<div id="main">
+<span style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776; </span>
+</div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div id="mySidenav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<a href="#" style="color: red;">Dashboard</a>
+<a class="active" href="Dash.html">Overview</a>
+<a href="#">Product</a>
+<button class="dropdown-btn">Customer</button>
+<div class="dropdown-container">
+<a href="file:///C:/Users/Ghanishtha/OneDrive/Desktop/site%201/website/index.html" style="font-size: 30px;color:red;">Login</a>
+<a href="Contact.html" style="font-size: 30px;color:red;">Feedback</a>
+</div>
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+for (i = 0; i < dropdown.length; i++) {
+dropdown[i].addEventListener("click", function() {
+this.classList.toggle("active");
+var dropdownContent = this.nextElementSibling;
+if (dropdownContent.style.display === "block") {
+dropdownContent.style.display = "none";
+} else {
+dropdownContent.style.display = "block";
+}
+});
+}
+</script>
+<a href="#">Orders</a>
+<a href="#">Checkout</a>
+<a href="#">Settings</a>
+</div>
+<div>
+</form>
+<div class="container">
+<div class="card-columns">
+<div class="card" style="background-color: black;color:white;">
+<div class="card-body text-center">
+<h2>Total Sales</h2>
+<h3>$825,491.73</h3>
+<p>+18.4K this week</p>
+</div>
+</div>
+<div class="card" style="background-color: black;color:white;">
+<div class="card-body text-center">
+<h2>Total Orders</h2>
+<h3>2,625.991</h3>
+<p>+5K this week</p>
+</div>
+</div>
+<div class="card" style="background-color: black;color:white;">
+<div class="card-body text-center">
+<h2>Refunded</h2>
+<h3>780,192</h3>
+<p>+66 this week</p>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="card-group">
+<div class="card" style="background-color: black;">
+<div class="card-body text-center">
+<h2>Sales by Category</h2>
+<img src="bar.png" style="height:350px;width:450px;">
+</div>
+</div>
+<div class="card" style="background-color: black;color:white;">
+<div class="card-body text-center">
+<h1>Revenue<br>
+Orders</h1>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+<script>
+var xValues = [1,2,3,4,5,6,7,8,9,10,11,12];
+new Chart("myChart", {
+type: "line",
+data: {
+labels: xValues,
+datasets: [{
+data: [3000,2000,6000,4900,7000,7500,6000,5000,6000,6800,6900,7000],
+borderColor: "red",
+fill: false
+}, {
+data: [2000,4000,5000,6000,7000,8000,8900,7000,6000,6700,6000,5000],
+borderColor: "green",
+fill: false
+}, ]
+},
+options: {
+legend: {display: false}
+}
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+</style>
+<script>
+function openNav() {
+document.getElementById("mySidenav").style.width = "250px";
+document.getElementById("main").style.marginLeft = "250px";
+}
+function closeNav() {
+document.getElementById("mySidenav").style.width = "0";
+document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+<script>
+function myFunction() {
+document.getElementById("demo").innerHTML = "Log In";
+}
+</script>
+</body>
+</html>
